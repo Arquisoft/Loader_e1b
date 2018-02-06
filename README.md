@@ -1,7 +1,7 @@
 # Loader_e1b
 
 [![Build Status](https://travis-ci.org/Arquisoft/Loader_e1b.svg?branch=master)](https://travis-ci.org/Arquisoft/Loader_e1b)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e680327c40a44a6b8378a8171066e341)](https://www.codacy.com/app/jelabra/citizensLoader1a?utm_source=github.com&utm_medium=referral&utm_content=Arquisoft/citizensLoader1a&utm_campaign=badger)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6308efdd6cbf43fcb00b4f1f8b3e83f3)](https://www.codacy.com/app/jelabra/Loader_e1b?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Arquisoft/Loader_e1b&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/Arquisoft/Loader_e1b/branch/master/graph/badge.svg)](https://codecov.io/gh/Arquisoft/Loader_e1b)
 
 Skeleton of Citizens Loader module
