@@ -7,7 +7,15 @@
 
 Skeleton of Citizens Loader module
 
-# Last Year Authors
+# Authors(2017-2018)
+
+- Mario Del Olmo Diaz (UO251090)
+- Daniel Fuego San Francisco (UO251185)
+- Sergio Fernandez Fernandez (UO251408)
+- Pablo Baragaño Coto (UO251759)
+- Sergio Rodrigez Artime (UO248043)
+
+# Authors(2016-2017)
 
 - Daniel Alba Muñiz (UO245188)
 - José Luis Bugallo González (UO244702)
@@ -15,10 +23,4 @@ Skeleton of Citizens Loader module
 - Daniel Duque Barrientos (UO245553)
 - Rubén de la Varga Cabero (UO246977)
 
-# Currernt Year Authors
 
-- Mario Del Olmo Diaz (UO251090)
-- Daniel Fuego San Francisco (UO251185)
-- Sergio Fernandez Fernandez (UO251408)
-- Pablo Baragaño Coto (UO251759)
-- Sergio Rodrigez Artime (UO248043)
