@@ -10,9 +10,9 @@ Skeleton of Citizens Loader module
 
 - Mario Del Olmo Diaz (UO251090)
 - Daniel Fuego San Francisco (UO251185)
-- Sergio Fernandez Fernandez (UO251408)
+- Sergio Fernández Fernández (UO251408)
 - Pablo Baragaño Coto (UO251759)
-- Sergio Rodrigez Artime (UO248043)
+- Sergio Rodríguez Artime (UO248043)
 
 # Authors(2016-2017)
 
