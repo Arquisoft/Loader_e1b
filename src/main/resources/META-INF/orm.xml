@@ -6,8 +6,8 @@
 
     <!-- Aqui van las consultas sql (Finder, en un futuro) -->
     <!-- Ejemplo consulta -->
-    <named-query name="User.findByDni">
-        <query>select u from User u where u.dni = ?1</query>
+    <named-query name="User.findByID">
+        <query>select u from User u where u.id = ?1</query>
     </named-query>
 
     <named-query name="User.findByEmail">

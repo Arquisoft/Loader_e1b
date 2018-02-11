@@ -6,18 +6,13 @@ import java.util.List;
 
 import com.lowagie.text.DocumentException;
 
-import model.User;
+import model.Agent;
 
-/**
- * 
- * @author Ignacio Escribano Burgos
- * Gestiona la conexión con la base de datos
- *
- */
+
 public interface Insert {
-	User save(User user) throws FileNotFoundException, DocumentException, IOException;
+	Agent save(Agent user) throws FileNotFoundException, DocumentException, IOException;
 
-	List<User> findByDNI(String dni);
+	List<Agent> findByID(Long id);
 
-	List<User> findByEmail(String email);
+	List<Agent> findByEmail(String email);
 }

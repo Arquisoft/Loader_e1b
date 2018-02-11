@@ -8,23 +8,22 @@ import com.lowagie.text.DocumentException;
 
 import dbupdate.Insert;
 import dbupdate.InsertP;
-import model.User;
+import model.Agent;
 import persistence.UserFinder;
 
 public class InsertR implements Insert {
 
 	@Override
-	public User save(User user) throws FileNotFoundException, DocumentException, IOException {
+	public Agent save(Agent user) throws FileNotFoundException, DocumentException, IOException {
 		return new InsertP().save(user);
 	}
-
 	@Override
-	public List<User> findByDNI(String dni) {
-		return UserFinder.findByDNI(dni);
+	public List<Agent> findByEmail(String email) {
+		return UserFinder.findByEmail(email);
 	}
 
 	@Override
-	public List<User> findByEmail(String email) {
-		return UserFinder.findByEmail(email);
+	public List<Agent> findByID(Long id) {
+		return UserFinder.findByID(id);
 	}
 }
