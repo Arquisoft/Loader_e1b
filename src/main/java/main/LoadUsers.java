@@ -51,7 +51,6 @@ public class LoadUsers {
 		System.out.println("Sergio Rodríguez Artime (UO248043)");
 		System.out.println("Para mas informacion consultar el repositorio en github con la url "
 				+ "https://github.com/Arquisoft/citizensLoader1a.git");
-		Syste
 
 	}
 
