@@ -10,10 +10,10 @@ import parser.ReaderSingleton;
  * @author 1A1
  *
  */
-public class LoadUsers {
+public class LoadAgents {
 
 	public static void main(String... args) throws DocumentException {
-		final LoadUsers runner = new LoadUsers();
+		final LoadAgents runner = new LoadAgents();
 		runner.run(args);
 	}
 
