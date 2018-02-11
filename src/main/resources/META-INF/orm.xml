@@ -7,11 +7,11 @@
     <!-- Aqui van las consultas sql (Finder, en un futuro) -->
     <!-- Ejemplo consulta -->
     <named-query name="User.findByID">
-        <query>select u from User u where u.idAgent = ?1</query>
+        <query>select u from Agent u where u.idAgent = ?1</query>
     </named-query>
 
     <named-query name="User.findByEmail">
-        <query>select u from User u where u.email = ?1</query>
+        <query>select u from Agent u where u.email = ?1</query>
     </named-query>
 
 </entity-mappings>

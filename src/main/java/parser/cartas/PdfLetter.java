@@ -16,7 +16,7 @@ public class PdfLetter extends Letter{
 		document = null;
 		FileOutputStream letter = null;
 		letter = new FileOutputStream(
-				"cartas/pdf/" + user.getId() + ".pdf");
+				"cartas/pdf/" + user.getIdAgent() + ".pdf");
 		document = new Document();
 		PdfWriter.getInstance(document, letter);
 		document.open();

@@ -24,13 +24,18 @@ public class Agent implements Serializable {
 	private String email;
 	private String username;
 	private String password;
-
-	public Agent(String nombre, String localizacion, String id, String email) {
+	private String kind;
+	private int kindCode;
+	
+	public Agent(String nombre, String localizacion, String id, String email, String kind, int kindCode) {
 		super();
 		this.nombre = nombre;
 		this.setLocalizacion(localizacion);
 		this.setIdAgent(id);
 		this.email = email;
+		this.kind = kind;
+		this.kindCode = kindCode;
+		generarPassword();
 	}
 
 	Agent() {
@@ -82,16 +87,18 @@ public class Agent implements Serializable {
 	public Long getId() {
 		return id;
 	}
+	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((email == null) ? 0 : email.hashCode());
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((idAgent == null) ? 0 : idAgent.hashCode());
+		result = prime * result + ((kind == null) ? 0 : kind.hashCode());
+		result = prime * result + kindCode;
 		result = prime * result + ((localizacion == null) ? 0 : localizacion.hashCode());
 		result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
-		result = prime * result + ((password == null) ? 0 : password.hashCode());
-		result = prime * result + ((username == null) ? 0 : username.hashCode());
 		return result;
 	}
 
@@ -109,10 +116,17 @@ public class Agent implements Serializable {
 				return false;
 		} else if (!email.equals(other.email))
 			return false;
-		if (id == null) {
-			if (other.id != null)
+		if (idAgent == null) {
+			if (other.idAgent != null)
 				return false;
-		} else if (!id.equals(other.id))
+		} else if (!idAgent.equals(other.idAgent))
+			return false;
+		if (kind == null) {
+			if (other.kind != null)
+				return false;
+		} else if (!kind.equals(other.kind))
+			return false;
+		if (kindCode != other.kindCode)
 			return false;
 		if (localizacion == null) {
 			if (other.localizacion != null)
@@ -123,16 +137,6 @@ public class Agent implements Serializable {
 			if (other.nombre != null)
 				return false;
 		} else if (!nombre.equals(other.nombre))
-			return false;
-		if (password == null) {
-			if (other.password != null)
-				return false;
-		} else if (!password.equals(other.password))
-			return false;
-		if (username == null) {
-			if (other.username != null)
-				return false;
-		} else if (!username.equals(other.username))
 			return false;
 		return true;
 	}
