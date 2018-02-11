@@ -12,7 +12,7 @@ import model.Agent;
 public interface Insert {
 	Agent save(Agent user) throws FileNotFoundException, DocumentException, IOException;
 
-	List<Agent> findByID(Long id);
+	List<Agent> findByID(String id);
 
 	List<Agent> findByEmail(String email);
 }

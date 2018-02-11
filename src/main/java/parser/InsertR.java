@@ -23,7 +23,7 @@ public class InsertR implements Insert {
 	}
 
 	@Override
-	public List<Agent> findByID(Long id) {
+	public List<Agent> findByID(String id) {
 		return UserFinder.findByID(id);
 	}
 }

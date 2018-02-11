@@ -6,7 +6,7 @@ import persistence.util.Jpa;
 
 public class UserFinder {
 
-	public static List<Agent> findByID(Long dni) {
+	public static List<Agent> findByID(String dni) {
 		return Jpa.getManager().createNamedQuery("User.findByID", Agent.class).
 				setParameter(1, dni).getResultList();
 	}
