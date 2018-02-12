@@ -27,7 +27,7 @@ public class ExecuterTest {
 		assertEquals(aS, aS2);
 		
 		Date date = new Date(System.currentTimeMillis());
-		Agent user = new Agent("Paco Francisco", "C\\Uría", "87654321P","francisco@gmail.com", "Person", 1);
+		Agent user = new Agent("Paco Francisco", "C\\Uría", "87654321P","francisco@gmail.com", 1);
 		
 		aS.getAF().saveData(user);
 		

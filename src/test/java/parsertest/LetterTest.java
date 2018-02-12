@@ -20,7 +20,7 @@ public class LetterTest {
 	public void creadasCorrectamente() throws FileNotFoundException, DocumentException, IOException {
 		Letter letter = new PdfLetter();
 		Date date = new Date(System.currentTimeMillis());
-		Agent user1 = new Agent("Paco Francisco", "C\\Uría","87654321P", "francisco@gmail.com",  "Person", 1);
+		Agent user1 = new Agent("Paco Francisco", "C\\Uría","87654321P", "francisco@gmail.com", 1);
 		letter.createLetter(user1);
 
 		File file = new File("cartas/pdf/87654321P.pdf");

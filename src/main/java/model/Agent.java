@@ -24,16 +24,15 @@ public class Agent implements Serializable {
 	private String email;
 	private String username;
 	private String password;
-	private String kind;
+//	private String kind;
 	private int kindCode;
 	
-	public Agent(String nombre, String localizacion, String id, String email, String kind, int kindCode) {
+	public Agent(String nombre, String localizacion, String id, String email, int kindCode) {
 		super();
 		this.nombre = nombre;
 		this.setLocalizacion(localizacion);
 		this.setIdAgent(id);
 		this.email = email;
-		this.kind = kind;
 		this.kindCode = kindCode;
 		generarPassword();
 	}
@@ -95,7 +94,6 @@ public class Agent implements Serializable {
 		int result = 1;
 		result = prime * result + ((email == null) ? 0 : email.hashCode());
 		result = prime * result + ((idAgent == null) ? 0 : idAgent.hashCode());
-		result = prime * result + ((kind == null) ? 0 : kind.hashCode());
 		result = prime * result + kindCode;
 		result = prime * result + ((localizacion == null) ? 0 : localizacion.hashCode());
 		result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
@@ -120,11 +118,6 @@ public class Agent implements Serializable {
 			if (other.idAgent != null)
 				return false;
 		} else if (!idAgent.equals(other.idAgent))
-			return false;
-		if (kind == null) {
-			if (other.kind != null)
-				return false;
-		} else if (!kind.equals(other.kind))
 			return false;
 		if (kindCode != other.kindCode)
 			return false;

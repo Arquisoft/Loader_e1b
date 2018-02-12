@@ -26,8 +26,8 @@ public class DbTest {
 	public void usuarioYaExistenteDni() throws FileNotFoundException, DocumentException, IOException {
 		ActionSingleton aS = ActionSingleton.getInstance();
 		Date date = new Date(System.currentTimeMillis());
-		Agent user1 = new Agent("Paco Francisco", "C\\Uría", "87654321P","francisco@gmail.com", "Person", 1);
-		Agent user2 = new Agent("Paco Francisco",  "C\\Uría", "87654321P", "franci@gmail.com", "Person", 1);
+		Agent user1 = new Agent("Paco Francisco", "C\\Uría", "87654321P","francisco@gmail.com", 1);
+		Agent user2 = new Agent("Paco Francisco",  "C\\Uría", "87654321P", "franci@gmail.com",  1);
 
 		aS.getAF().saveData(user1);
 		aS.getAF().saveData(user2);
@@ -49,8 +49,8 @@ public class DbTest {
 		Date date = new Date(System.currentTimeMillis());
 //		Agent user1 = new Agent("Paco", "Francisco", "francisco@gmail.com", date, "C\\Uría", "Español", "87654321P");
 //		Agent user3 = new Agent("Paco", "Francisco", "francisco@gmail.com", date, "C\\Uría", "Español", "87654353Y");
-		Agent user1 = new Agent("Paco Francisco", "C\\Uría", "87654321P","francisco@gmail.com", "Person", 1);
-		Agent user3 = new Agent("Paco Francisco", "C\\Uría", "87654321P", "francisco@gmail.com", "Person", 1);
+		Agent user1 = new Agent("Paco Francisco", "C\\Uría", "87654321P","francisco@gmail.com",  1);
+		Agent user3 = new Agent("Paco Francisco", "C\\Uría", "87654321P", "francisco@gmail.com", 1);
 
 		aS.getAF().saveData(user1);
 		aS.getAF().saveData(user3);

@@ -13,10 +13,10 @@ public class UserTest {
 	@Test
 	public void testEquals() {
 		Date date = new Date(System.currentTimeMillis());
-		Agent user1 = new Agent("Dani Duque", "C\\Buenavida", "7777777R", "email@gmail.com", "Person", 1);
-		Agent user2 = new Agent("Dani Duque", "C\\Buenavida", "7777777R", "email@gmail.com", "Person", 1);
-		Agent user3 = new Agent("Dani Duque", "C\\Buenavida", "7787777R", "email@gmail.com", "Person", 1);
-		Agent user4 = new Agent("Dani Duque", "C\\Buenavida", null, "email@gmail.com", "Person", 1);
+		Agent user1 = new Agent("Dani Duque", "C\\Buenavida", "7777777R", "email@gmail.com", 1);
+		Agent user2 = new Agent("Dani Duque", "C\\Buenavida", "7777777R", "email@gmail.com",  1);
+		Agent user3 = new Agent("Dani Duque", "C\\Buenavida", "7787777R", "email@gmail.com",  1);
+		Agent user4 = new Agent("Dani Duque", "C\\Buenavida", null, "email@gmail.com",  1);
 
 		assertEquals(true, user1.equals(user2));
 		assertEquals(true, user3.equals(user3));
@@ -28,11 +28,11 @@ public class UserTest {
 
 	@Test
 	public void testHashCode() {
-		Agent user1 = new Agent("Dani Duque", "C\\Buenavida", "7777777R", "email@gmail.com", "Person", 1);
-		Agent user2 = new Agent("Dani Duque", "C\\Buenavida", "7777777R", "email@gmail.com", "Person", 1);
-		Agent user3 = new Agent("Dani Duque", "C\\Buenavida", "7787777R", "email@gmail.com", "Person", 1);
-		Agent user4 = new Agent("Dani Duque", "C\\Buenavida", null, "email@gmail.com", "Person", 1);
-		Agent user5 = new Agent("Dani Duque", "C\\Buenavida", null, "email@gmail.com", "Person", 1);
+		Agent user1 = new Agent("Dani Duque", "C\\Buenavida", "7777777R", "email@gmail.com",  1);
+		Agent user2 = new Agent("Dani Duque", "C\\Buenavida", "7777777R", "email@gmail.com",  1);
+		Agent user3 = new Agent("Dani Duque", "C\\Buenavida", "7787777R", "email@gmail.com",  1);
+		Agent user4 = new Agent("Dani Duque", "C\\Buenavida", null, "email@gmail.com", 1);
+		Agent user5 = new Agent("Dani Duque", "C\\Buenavida", null, "email@gmail.com",  1);
 
 		assertEquals(user1.hashCode(), user2.hashCode());
 		assertEquals(user4.hashCode(), user5.hashCode());
@@ -44,7 +44,7 @@ public class UserTest {
 	@Test
 	public void testAll() {
 		Date date = new Date(System.currentTimeMillis());
-		Agent user1 = new Agent("Dani Duque", "C\\Buenavida", "7777777R", "email@gmail.com", "Person", 1);
+		Agent user1 = new Agent("Dani Duque", "C\\Buenavida", "7777777R", "email@gmail.com",  1);
 
 		String password = user1.getPassword();
 		String userName = user1.getUsername();

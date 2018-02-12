@@ -12,6 +12,7 @@ import java.util.logging.Level;
 import reportwriter.ReportWriter;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -56,7 +57,6 @@ public class RList implements ReadList {
 			XSSFCell cell;
 			List<XSSFCell> user;
 			Iterator<Row> rows = sheet.rowIterator();
-
 			while (rows.hasNext()) {
 				user = new ArrayList<XSSFCell>();
 				row = (XSSFRow) rows.next();
@@ -107,11 +107,9 @@ public class RList implements ReadList {
 	}
 
 	private void crearUsuarios(List<XSSFCell> list) throws FileNotFoundException, DocumentException, IOException {
-//		Agent user = new Agent(list.get(0).getStringCellValue(), list.get(1).getStringCellValue(),
-//				list.get(2).getStringCellValue(), list.get(3).getDateCellValue(), 
-//				list.get(4).getStringCellValue(),list.get(5).getStringCellValue(), 
-//				list.get(6).getStringCellValue());
-		Agent user = new Agent(list.get(0).getStringCellValue(),null,list.get(6).getStringCellValue(),list.get(2).getStringCellValue(), null, 1);
+		System.out.println( list.size());
+		
+		Agent user = new Agent(list.get(0).getStringCellValue(),list.get(1).getStringCellValue(), list.get(2).getStringCellValue(), list.get(3).getStringCellValue(), Double.valueOf(list.get(4).getNumericCellValue()).intValue());
 		InsertR insert = new InsertR();
 		insert.save(user);
 		//getaF().saveData(user);
