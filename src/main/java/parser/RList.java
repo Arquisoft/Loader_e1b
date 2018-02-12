@@ -69,7 +69,7 @@ public class RList implements ReadList {
 					}
 					System.out.println();
 					allUsers.add(user);
-					crearUsuarios(user);
+				 	crearUsuarios(user);
 				}
 				i++;
 			}
@@ -107,8 +107,6 @@ public class RList implements ReadList {
 	}
 
 	private void crearUsuarios(List<XSSFCell> list) throws FileNotFoundException, DocumentException, IOException {
-		System.out.println( list.size());
-		
 		Agent user = new Agent(list.get(0).getStringCellValue(),list.get(1).getStringCellValue(), list.get(2).getStringCellValue(), list.get(3).getStringCellValue(), Double.valueOf(list.get(4).getNumericCellValue()).intValue());
 		InsertR insert = new InsertR();
 		insert.save(user);
