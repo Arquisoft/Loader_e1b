@@ -50,7 +50,7 @@ public class LoadAgents {
 		System.out.println("Pablo Baragaño Coto (UO251759)");
 		System.out.println("Sergio Rodríguez Artime (UO248043)");
 		System.out.println("Para mas informacion consultar el repositorio en github con la url "
-				+ "https://github.com/Arquisoft/Loader_e1b.git");
+				+ "https://github.com/Arquisoft/Loader_e1b");
 
 	}
 
