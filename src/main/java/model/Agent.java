@@ -1,6 +1,7 @@
 package model;
 
 import java.io.Serializable;
+import java.util.Random;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Users")
+@Table(name = "Agent")
 public class Agent implements Serializable {
 	/**
 	 * 
@@ -34,7 +35,12 @@ public class Agent implements Serializable {
 		this.setIdAgent(id);
 		this.email = email;
 		this.kindCode = kindCode;
+		generarUser();
 		generarPassword();
+	}
+
+	private void generarUser() {
+		this.username=email.split("@")[0]+(new Random()).nextInt(1000);
 	}
 
 	Agent() {
