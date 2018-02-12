@@ -40,7 +40,7 @@ public class Agent implements Serializable {
 	}
 
 	private void generarUser() {
-		this.username=email.split("@")[0]+(new Random()).nextInt(1000);
+		this.username=idAgent;
 	}
 
 	Agent() {
