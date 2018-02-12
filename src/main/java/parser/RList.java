@@ -12,7 +12,6 @@ import java.util.logging.Level;
 import reportwriter.ReportWriter;
 
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -64,12 +63,14 @@ public class RList implements ReadList {
 				if (i > 0) {
 					while (cells.hasNext()) {
 						cell = (XSSFCell) cells.next();
+						
 						user.add(cell);
-						System.out.print(cell.toString() + " ; ");
-					}
+						
+					}			
 					System.out.println();
 					allUsers.add(user);
 				 	crearUsuarios(user);
+				 	System.out.print(user.toString());
 				}
 				i++;
 			}
@@ -110,7 +111,6 @@ public class RList implements ReadList {
 		Agent user = new Agent(list.get(0).getStringCellValue(),list.get(1).getStringCellValue(), list.get(2).getStringCellValue(), list.get(3).getStringCellValue(), Double.valueOf(list.get(4).getNumericCellValue()).intValue());
 		InsertR insert = new InsertR();
 		insert.save(user);
-		//getaF().saveData(user);
 	}
 	
 	public ArrayList<List<XSSFCell>> getAllUsers(){

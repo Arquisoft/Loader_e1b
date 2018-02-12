@@ -1,7 +1,6 @@
 package model;
 
 import java.io.Serializable;
-import java.util.Random;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
