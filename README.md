@@ -23,3 +23,8 @@ Skeleton of Citizens Loader module
 - Rubén de la Varga Cabero (UO246977)
 
 
+# Ejecución:
+Primero compilaremos el archivo utilizando el comando en la ventana de comando:
+  mvn compile
+Tras haber hecho esta operación pasamos a ejecutarlo con la orden:
+  mvn -q exec:java -Dexec.mainClass="main.LoadAgents" -Dexec.args="load src\test\resources\Prueba.xlsx"
