@@ -24,6 +24,9 @@ Skeleton of Citizens Loader module
 
 
 # Ejecución:
-Utilizaremos la linea de comandos con las siguientes ordenes:
+Utilizaremos la linea de comandos desde la carpeta donde esté clonado el repositorio con las siguientes ordenes:
 - mvn compile
 - mvn -q exec:java -Dexec.mainClass="main.LoadAgents" -Dexec.args="load src\test\resources\Prueba.xlsx"
+
+Para ejecutar los tests, utilizaremos:
+- mvn test
