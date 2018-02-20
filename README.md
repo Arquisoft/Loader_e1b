@@ -23,10 +23,10 @@ Skeleton of Citizens Loader module
 - Rubén de la Varga Cabero (UO246977)
 
 
--# Ejecución:	
-- Sobre la carpeta donde tengamos localizado el proyecto, lanzaremos línea de comandos y ejecutaremos las siguientes órdenes:	
--  - mvn compile	
--  - mvn -q exec:java -Dexec.mainClass="main.LoadAgents" -Dexec.args="load src\test\resources\Prueba.xlsx"	
+# Ejecución:	
+Sobre la carpeta donde tengamos localizado el proyecto, lanzaremos línea de comandos y ejecutaremos las siguientes órdenes:	
+  - mvn compile	
+  - mvn -q exec:java -Dexec.mainClass="main.LoadAgents" -Dexec.args="load src\test\resources\Prueba.xlsx"	
  	 
-- Para pasar los tests sobre el proyecto previamente compilado:	
--  - mvn test
+Para pasar los tests sobre el proyecto previamente compilado:	
+  - mvn test
