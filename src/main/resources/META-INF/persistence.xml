@@ -13,9 +13,9 @@
 			<property name="javax.persistence.jdbc.driver" 
 					  value="com.mysql.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url" 
-					  value="jdbc:mysql://bd.koinsys.es:3306/asw1a_bd" />
-			<property name="javax.persistence.jdbc.user" value="asw1a" />
-			<property name="javax.persistence.jdbc.password" value="loader1a" />
+					  value="jdbc:mysql://mysql8.db4free.net:3307/asw_e1b" />
+			<property name="javax.persistence.jdbc.user" value="e1basw" />
+			<property name="javax.persistence.jdbc.password" value="lab1e1b" />
 			<property name="hibernate.dialect" 
 					  value="org.hibernate.dialect.MySQLDialect" />
             <property name="hibernate.show_sql" value="true" />
